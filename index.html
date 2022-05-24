@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav and Tabs</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+    <div class="tab_area">
+        
+ 
+          <div class="content_area">
+              <div id="one" class="content tab">
+                  
+                      <div class="content_items">
+                          <div class="content_item">
+                              <h1>One</h1>
+                              <p>London is the capital city of England.  <span style="color: red;">One</span></p>
+                          </div>
+                          <div class="content_item">
+                              <div class="img">
+                                  <img src="images/one.jpg" alt="">
+                              </div>
+                          </div>
+                      </div>
+             
+              </div>     
+                  <div id="two" class="content tab" style="display:none">
+                  
+                      <div class="content_items">
+                          <div class="content_item">
+                              <h1>Two</h1>
+                              <p>London is the capital city of England.  <span style="color: red;">Two</span></p>
+                          </div>
+                          <div class="content_item">
+                              <div class="img">
+                                  <img src="images/two.jpg" alt="">
+                              </div>
+                          </div>
+                      </div>
+             
+              </div>
+
+
+                <div id="three" class="content tab" style="display:none">
+                  
+                      <div class="content_items">
+                          <div class="content_item">
+                              <h1>Three</h1>
+                              <p>London is the capital city of England.  <span style="color: red;">Three</span></p>
+                          </div>
+                          <div class="content_item">
+                              <div class="img">
+                                  <img src="images/three.jpg" alt="">
+                              </div>
+                          </div>
+                      </div>
+             
+              </div>   
+               <div id="four" class="content tab" style="display:none">
+                  
+                      <div class="content_items">
+                          <div class="content_item">
+                              <h1>Four</h1>
+                              <p>London is the capital city of England. <span style="color: red;">Four</span></p>
+                          </div>
+                          <div class="content_item">
+                              <div class="img">
+                                  <img src="images/four.jpg" alt="">
+                              </div>
+                          </div>
+                      </div>
+             
+              </div>
+              <div id="five" class="content tab" style="display:none">
+                  
+                <div class="content_items">
+                    <div class="content_item">
+                        <h1>Five</h1>
+                        <p>London is the capital city of England.  <span style="color: red;">Five</span></p>
+                    </div>
+                    <div class="content_item">
+                        <div class="img">
+                            <img src="images/three.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+       
+        </div>
+              
+        
+              
+         
+
+          </div>
+
+          <div class="btn_area">
+            <button class="" onclick="openTab('one')">One</button>
+            <button class="" onclick="openTab('two')">Two</button>
+            <button class="" onclick="openTab('three')">Three</button>
+              <button class="" onclick="openTab('four')">Four</button>
+              <button class="" onclick="openTab('five')">Five</button>
+          </div>
+          
+    </div>
+    
+
+      
+      <script>
+      function openTab(tabName) {
+        var i;
+        var x = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        document.getElementById(tabName).style.display = "block";  
+      }
+      </script>
+
+</body>
+</html>

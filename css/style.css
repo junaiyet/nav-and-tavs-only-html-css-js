@@ -1,0 +1,26 @@
+.tab_area{
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content{
+    background-color: rgb(165, 143, 143);
+}   
+  .content_items{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+} 
+.content_item{
+  width: 45%;
+}
+ .img img{
+  width: 100%;
+
+}
+.btn_area{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    }
